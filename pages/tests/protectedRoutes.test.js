@@ -14,7 +14,7 @@ jest.mock('js-cookie', () => ({
 test('should redirect unauthenticated users to the login page', async () => {
   const mockPush = jest.fn();
   useRouter.mockReturnValue({ push: mockPush });
-  Cookies.get.mockReturnValue(undefined); // Simulate no authentication cookie
+  Cookies.get.mockReturnValue(undefined); 
 
   render(<Dashboard />);
 
