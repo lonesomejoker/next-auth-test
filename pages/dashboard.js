@@ -10,19 +10,17 @@ const Dashboard = () => {
     Cookies.remove("loggedin");
     router.push("/");
   };
-  
+
   useEffect(() => {
-    const isLoggedIn = Cookies.get('loggedin');
+    const isLoggedIn = Cookies.get("loggedin");
     if (!isLoggedIn) {
-      router.push('/');
+      router.push("/");
     }
   }, [router]);
   return (
     <div className=" text-center text-[1.4rem]">
       <Link href="/">
-        <nav>
-          <h1>Dashboard</h1>
-        </nav>
+        <h1 className=" text-gray-200">Dashboard</h1>
       </Link>
       <div className="">
         <h1 className=" text-gray-100">You Are Logged In!</h1>
