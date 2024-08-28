@@ -2,7 +2,7 @@ import React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import { useRouter } from 'next/router';
 import Cookies from 'js-cookie';
-import Dashboard from '../dashboard';
+import Dashboard from '../pages/dashboard';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn(),

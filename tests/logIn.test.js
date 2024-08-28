@@ -1,9 +1,8 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Cookies from 'js-cookie';
-import { act } from 'react-dom/test-utils';
 import { useRouter } from 'next/router';
-import Home from '../index'; 
+import Home from '../pages/index'; 
 
 jest.mock('js-cookie');
 jest.mock('next/router', () => ({
