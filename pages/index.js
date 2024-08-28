@@ -6,7 +6,7 @@ import Link from "next/link";
 const Home = () => {
   const router = useRouter();
 
-  const logIn = (e) => {
+  const loggIn = (e) => {
     e.preventDefault();
     Cookies.set("loggedin", "true");
     router.push("/dashboard");
@@ -18,8 +18,8 @@ const Home = () => {
           <h1 className=" text-[1.6rem] text-center my-5">Home</h1>
       </Link>
       <div className=" bg-white/30 backdrop-blur-md px-5 py-4 rounded-tr-xl rounded-bl-xl">
-        <form onSubmit={(e) => logIn(e)} className=" flex flex-col gap-y-8">
-          <h1 className=" text-center text-violet-500">Log in now!!</h1>
+        <form onSubmit={(e) => loggIn(e)} className=" flex flex-col gap-y-8">
+          <h1 className=" text-center text-violet-500">LOGGING NOW!!</h1>
           <input
             type="text"
             placeholder="Username"
