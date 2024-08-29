@@ -3,4 +3,5 @@
 2) npm install to install
 3) npm run dev to run in local host
 4) npm test to check the test cases
-*For login u can use random name & password
+   
+##For login u can use random name & password
